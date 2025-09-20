@@ -1,1 +1,93 @@
-/* место для вашего кода */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    max-width: 1193px;
+    height: 293px;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav {
+    color: rgb(0, 0, 0);
+    margin-right: 20px; 
+    text-decoration: underline;
+}
+
+.logo {
+    width: 40%;
+    height: 40%;
+
+}
+
+.flower {
+    max-height: 757px;
+    position: relative;
+}
+
+.overlay {
+    background-color: RGB(0 0 0/0.6);
+    inset: 0;
+    position: absolute;
+}
+h1 {
+    position: absolute; 
+    inset: 165px 50px 207px 50px;
+    font-style: bold;
+    color: white;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.tebe {
+  text-align: center; 
+  display: block;
+}
+
+.nado {
+    text-align: right;
+    display: block;
+}
+
+.auction {
+    position: absolute;
+    inset: 668px 413px 61px 50px;
+    z-index: 1;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 1rem; 
+}
+
+.button {
+    position: absolute;
+    inset: 656px 50px 50px 794px;
+    z-index: 1;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    text-align: center;
+    padding: 10px;
+}
+
+.h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-style: bold;
+    padding-left: 40px;
+}
+
+.boxi {
+    /* max-height: 596px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+}
+
+.box-gallery, opisanie-boxa {
+    
+}
