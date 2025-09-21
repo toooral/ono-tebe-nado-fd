@@ -1,9 +1,9 @@
 /* Поехали. Шапка с меню */
 .header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items:center;
-    max-width: 1193px;
+    max-width: 1100px;
     height: 293px;
     background-color: rgb(255, 255, 255);
     font-size: 18px;
@@ -11,18 +11,42 @@
 }
 
 .nav {
+    padding-left: 50px;
     color: rgb(0, 0, 0);
-    margin-right: 20px; 
+    text-decoration: none;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    padding-left: 184px;
+}
+
+.phone {
     text-decoration: underline;
+}
+.phone, .mail, .address {
+    display: block; 
+}
+
+.address{
+    font-style: normal;
+}
+.menu-items {
+    display: flex;
+    gap: 13px;
+    list-style: none;    
 }
 
 .logo {
-    width: 40%;
-    height: 40%;
+    max-width: 130px;
 
 }
 /* Оно тебе надо */
 .flower {
+    max-width: 1100px;
     max-height: 757px;
     position: relative;
 }
@@ -79,9 +103,10 @@ h1 {
 
 /* Блок с лотами TODO: Лоты должны находиться по середине. Исправить.*/
 .loti {
-    max-width: 1052px;
+    max-width: 1100px;
     max-height: 723px;
     margin-bottom: 240px;
+    padding-left: 24px;
 }
 .h2 {
     font-size: 40px;
@@ -132,6 +157,7 @@ h1 {
     align-self: start;
     padding-top: 48px;
     z-index: 2;
+    font-size: 23px;
 }
 
 .opisanie-boxa {
@@ -143,9 +169,10 @@ h1 {
     font-size: 20px;
     color: rgba(255, 255, 255, 1);
     font-weight: 400;
+    font-size: 20px;
 }
 .more {
-    padding-left: 30px; /*Разобраться с отступом сверху*/
+    padding-left: 40px; /*Разобраться с отступом сверху*/
 }
 
 /* Блок с описание аукциона*/
