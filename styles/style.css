@@ -13,7 +13,8 @@
 .nav {
     padding-left: 50px;
     color: rgb(0, 0, 0);
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 5px; 
 }
 
 .contact-form {
@@ -24,8 +25,9 @@
     padding-left: 184px;
 }
 
-.phone {
+.phone, .mail {
     text-decoration: underline;
+    text-underline-offset: 5px;
 }
 .phone, .mail, .address {
     display: block; 
@@ -186,6 +188,7 @@ h1 {
     grid-template-areas: 
       "logo-krug h2"
       ". all-text"; 
+    
 }
 
 .all-text {
@@ -214,3 +217,14 @@ h1 {
     margin-bottom: 30px;
 }
 
+.footer {
+    max-height: 180px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: center;
+    padding-top: 180px;
+}
+
+.contact-form-footer {
+    padding: 24px 0 132px 50px;
+}
