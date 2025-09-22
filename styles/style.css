@@ -13,10 +13,16 @@
 .nav {
     padding-left: 50px;
     color: rgb(0, 0, 0);
-    text-decoration: underline;
-    text-underline-offset: 5px; 
 }
 
+.mainpoint {
+    text-decoration: none;
+}
+
+.lot-view, .auc {
+    text-decoration: underline;
+    text-underline-offset: 5px;     
+}
 .contact-form {
     display: flex;
     justify-content: center;
@@ -188,13 +194,11 @@ h1 {
     grid-template-areas: 
       "logo-krug h2"
       ". all-text"; 
-    
 }
 
 .all-text {
     grid-area: all-text;
 }
-
 
 .logo-krug {
     max-height: 240px;
@@ -207,7 +211,6 @@ h1 {
     font-size: 40px;
     text-transform: uppercase;
     font-style: bold;
-
 }
 
 .auction-opisanie {
@@ -215,8 +218,10 @@ h1 {
     font-size: 20px;
     color: rgba(0, 0, 0, 1);
     margin-bottom: 30px;
+    padding-top: 8px;
 }
 
+/* Footer */
 .footer {
     max-height: 180px;
     display: grid;
@@ -226,5 +231,29 @@ h1 {
 }
 
 .contact-form-footer {
-    padding: 24px 0 132px 50px;
+    padding: 0 0 132px 50px;
+    font-size: 18px;
 }
+
+.nav-footer-ul {
+    list-style-type: none;
+    justify-items: center;
+    font-size: 18px;
+}
+
+.social {
+    padding-right: 50px;
+}
+.social-media {
+    list-style-type: none;
+    justify-content: end;
+    display: flex;
+    gap: 48px;
+}
+
+.social-media img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+/* :) */
