@@ -17,25 +17,18 @@
             <a class="mainpoint" href="#0">главная</a>  
           </li>
           <li>
-            <img class="tochka" src="/images/list_marker.png"/>
-          </li>
-          <li>
             <a class="lot-view" href="#0">посмотреть лоты</a>
-          </li>
-          <li>
-            <img class="tochka" src="/images/list_marker.png"/>
           </li>
           <li>
             <a class="auc" href="#0">об аукционе</a>
           </li>
         </ul>
       </nav>
-      <img class="logo" src="/images/logo.svg" alt="Логотип компании"/>
+      <a class="logo" ><img src="/images/logo.svg" alt="Логотип компании"/></a>
       <div class="contact-form">
         <a class="phone" href="tel:++9 999 555 5555">+9 999 555 5555</a>
         <a class="mail" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <address class="address">наб. Принсенграхт 263-</address>
-        <address class="address">265, Амстердам</address>
+        <address class="address">наб. Принсенграхт 263- 265, Амстердам</address>
       </div>
       </header>
     <main>
@@ -52,39 +45,53 @@
       </div>
       <div class="loti">
       <h2 class="h2">Лоты</h2>
-      <section class="boxi">
+<section class="boxi">
+  <ul class="lots__card-list">
+    <li class="lots__card-list-item">
+      <a href="#0" class="lot-link">
         <div class="lot">
           <img class="box-gallery" src="/images/photo-filmi.png" alt="Кадр из фильма"/>
-          <h3 class="h3">Фильм режиссёра, который бросил киношколу</h3>
-          <p class="opisanie-boxa">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, 
+          <article class="article">Фильм режиссёра, который бросил киношколу</article>
+          <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, 
           что режиссёр — Пол Томас Андерсон?</p>
         </div>
+      </a>
+    </li>
+    <li class="lots__card-list-item">
+      <a href="#0" class="lot-link">
         <div class="lot">
           <img class="box-gallery" src="/images/photo-knigi.jpg" alt="Фотография обложки книги"/>
-          <h3 class="h3">Книга, где описан один скучный день из жизни рекламного агента</h3>
-          <p class="opisanie-boxa">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. 
+          <article class="article">Книга, где описан один скучный день из жизни рекламного агента</article>
+          <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. 
           В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. 
           И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
         </div>
+      </a>
+    </li>
+    <li class="lots__card-list-item">
+      <a href="#0" class="lot-link">
         <div class="lot">
           <img class="box-gallery" src="/images/photo-kartini.jpg" alt="Фотография картины"/>
-          <h3 class="h3">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
-          <p class="opisanie-boxa">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. 
+          <article class="article">Картина, которую повторит даже 5-летний сын маминой подруги</article>
+          <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. 
           Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — 
           одна из революционных работ Кандинского?</p>
         </div>
-      </section>
-      <a class="more" href="#0">посмотреть больше</a>
+      </a>
+    </li>
+  </ul>
+</section>
+      <a class="lots__look-more-link" href="#0">посмотреть больше</a>
     </div>
     <div class="auction-about">
-      <section class="setka-auction">
-        <img class="logo-krug" src="/images/logo-krug.svg" alt="Логотип Оно тебе надо"/>
-        <h2 class="h2-auction">Об аукционе</h2>
+      <section class="about__column">
+        <img class="about__logo-image" src="/images/logo-krug.svg" alt="Логотип Оно тебе надо"/>
+        <article class="about__title">Об аукционе</article>
         <div class="all-text">
-          <p class="auction-opisanie">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. 
+          <p class="about__text">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. 
           Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, 
           которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
-          <p class="auction-opisanie">Слишком сложные или, наоборот, слишком простые. 
+          <p class="about__text">Слишком сложные или, наоборот, слишком простые. 
           Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. 
           Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. 
           Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
@@ -100,7 +107,7 @@
         <address class="address">Амстердам</address>
       </div>
       <nav class="nav-footer">
-        <ul class="nav-footer-ul">
+        <ul class="footer__menu-list">
           <li>
             <a class="mainpoint" href="#0">главная</a>  
           </li>
@@ -113,20 +120,20 @@
         </ul>
       </nav>
       <div class="social">
-        <ul class="social-media">
+        <ul class="footer__social-list">
           <li class="youtube">
-            <a href="#0"> 
-              <img src="/images/yt.svg" alt="Логотип Ютуба"/>
+            <a class="footer__social-link" href="#0"> 
+              <img clas="footer__social-icon" src="/images/yt.svg" alt="Логотип Ютуба"/>
             </a>
           </li>
           <li class="vk">
-            <a href="#0">
-              <img src="/images/vk.svg" alt="Логотип вконтакте"/>
+            <a class="footer__social-link" href="#0">
+              <img class="footer__social-icon" src="/images/vk.svg" alt="Логотип вконтакте"/>
             </a>
           </li>
           <li class="pinterest">
-            <a href="#0">
-              <img src="/images/pinterest.svg" alt="Логотип Пинтерест"/>
+            <a class="footer__social-link" href="#0">
+              <img clas="footer__social-icon" src="/images/pinterest.svg" alt="Логотип Пинтерест"/>
             </a>
           </li>
         </ul> 
