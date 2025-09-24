@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="/styles/global.css"/>
-    <link rel="stylesheet" href="/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles/style.css"/>
+    <link rel="stylesheet" href="./styles/global.css"/>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/style.css"/>
   </head>
   <body>
     <header class="header">
@@ -25,70 +25,59 @@
         </ul>
       </nav>
       <a class="logo" href="#0">
-        <img src="/images/logo.svg" alt="Логотип компании"/>
+        <img src="../images/logo.svg" alt="Логотип компании"/>
       </a>
-      <div class="contact-form">
-        <a class="phone" href="tel:++9 999 555 5555">+9 999 555 5555</a>
-        <a class="mail" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <address class="address">наб. Принсенграхт 263- 265, Амстердам</address>
-      </div>
+      <address class="address">
+        <a href="tel:++9 999 555 5555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p class="address-full">наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
       </header>
     <main>
-      <div class="flower">
-        <img class="lotus" src="/images/lotus-flower.png" alt="Рисунок лотоса">
+      <div class="banner">
         <div class="overlay"></div>
         <h1 class="h1">
-          <span class="ono">Оно</span>
-          <span class="tebe">Тебе</span>
-          <span class="nado">Надо</span>
+          <span class="word1">Оно</span>
+          <span class="word2">Тебе</span>
+          <span class="word3">Надо</span>
         </h1>
-        <p class="auction">Аукцион вещей, в которые никто не верил</p>
-        <a class="button" href="#0">Сделать ставку</a>
+        <p class="banner-opisanie">Аукцион вещей, в которые никто не верил</p>
+        <a type="button" class="banner-button" href="#0">Сделать ставку</a>
       </div>
       <div class="loti">
       <h2 class="h2">Лоты</h2>
-<section class="boxi">
-  <ul class="lots__card-list">
-    <li class="lots__card-list-item">
-      <a href="#0" class="lot-link">
-        <div class="lot">
-          <img class="box-gallery" src="/images/photo-filmi.png" alt="Кадр из фильма"/>
-          <article class="article">Фильм режиссёра, который бросил киношколу</article>
+  <section class="boxi">
+    <ul class="lots__card-list">
+      <li class="lots__card-list-item lot1">
+        <a href="#0" class="lot-link">
+          <h3 class="article">Фильм режиссёра, который бросил киношколу</h3>
           <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, 
           что режиссёр — Пол Томас Андерсон?</p>
-        </div>
       </a>
-    </li>
-    <li class="lots__card-list-item">
-      <a href="#0" class="lot-link">
-        <div class="lot">
-          <img class="box-gallery" src="/images/photo-knigi.jpg" alt="Фотография обложки книги"/>
-          <article class="article">Книга, где описан один скучный день из жизни рекламного агента</article>
+      </li>
+      <li class="lots__card-list-item lot2">
+        <a href="#0" class="lot-link">
+          <h3 class="article">Книга, где описан один скучный день из жизни рекламного агента</h3>
           <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. 
           В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. 
           И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-        </div>
-      </a>
-    </li>
-    <li class="lots__card-list-item">
-      <a href="#0" class="lot-link">
-        <div class="lot">
-          <img class="box-gallery" src="/images/photo-kartini.jpg" alt="Фотография картины"/>
-          <article class="article">Картина, которую повторит даже 5-летний сын маминой подруги</article>
-          <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. 
-          Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — 
-          одна из революционных работ Кандинского?</p>
-        </div>
-      </a>
-    </li>
-  </ul>
-</section>
-      <a class="lots__look-more-link" href="#0">посмотреть больше</a>
+        </a>
+      </li>
+        <li class="lots__card-list-item lot3">
+          <a href="#0" class="lot-link">
+            <h3 class="article">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+            <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. 
+            Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — 
+            одна из революционных работ Кандинского?</p>
+          </a>
+        </li>
+      </ul>
+    <a class="lots__look-more-link" href="#0">посмотреть больше</a>
+  </section>
     </div>
-    <div class="auction-about">
       <section class="about__column">
-        <img class="about__logo-image" src="/images/logo-krug.svg" alt="Логотип Оно тебе надо"/>
         <article class="about__title">Об аукционе</article>
+        <img class="about__logo-image" src="./images/logo-krug.svg" alt="Логотип Оно тебе надо"/>
         <div class="all-text">
           <p class="about__text">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. 
           Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, 
@@ -99,7 +88,6 @@
           Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
         </div>
       </section>
-    </div>
     </main>
     <footer class="footer">
       <div class="contact-form-footer">
@@ -125,17 +113,17 @@
         <ul class="footer__social-list">
           <li class="youtube">
             <a class="footer__social-link" href="#0"> 
-              <img clas="footer__social-icon" src="/images/yt.svg" alt="Логотип Ютуба"/>
+              <img clas="footer__social-icon" src="./images/yt.svg" alt="Логотип Ютуба"/>
             </a>
           </li>
           <li class="vk">
             <a class="footer__social-link" href="#0">
-              <img class="footer__social-icon" src="/images/vk.svg" alt="Логотип вконтакте"/>
+              <img class="footer__social-icon" src="./images/vk.svg" alt="Логотип вконтакте"/>
             </a>
           </li>
           <li class="pinterest">
             <a class="footer__social-link" href="#0">
-              <img clas="footer__social-icon" src="/images/pinterest.svg" alt="Логотип Пинтерест"/>
+              <img clas="footer__social-icon" src="./images/pinterest.svg" alt="Логотип Пинтерест"/>
             </a>
           </li>
         </ul> 
