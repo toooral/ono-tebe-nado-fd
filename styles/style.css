@@ -76,6 +76,7 @@ a[href^="tel:"], a[href^="mailto:"] {
     inset: 0;
     position: absolute;
 }
+
 h1 {
     position: absolute; 
     inset: 165px 50px 207px 50px;
@@ -144,7 +145,7 @@ h1 {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;          /* разрешить перенос */
-    gap: 20px;   
+    gap: 25px;   
 }
 
 .lots__card-list-item::before { /* Затемнение */
@@ -248,7 +249,7 @@ h1 {
 .about__logo-image {
     max-height: 240px;
     grid-area: logo-krug;
-    padding-right: 30px;
+    padding-right: 49px;
 }
 
 .about__title {
@@ -275,10 +276,11 @@ h1 {
     grid-template-columns: 1fr auto 1fr;
     justify-content: center;
     padding-top: 170px;
+    padding-bottom: 130px;
 }
 
 .address-footer {
-    padding: 0 0 132px 55px;
+    padding: 7px 0 0 50px;
     font-size: 18px;
     max-width: 300px;
     font-style: normal;
