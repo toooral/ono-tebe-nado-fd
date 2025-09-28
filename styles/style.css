@@ -93,15 +93,17 @@ a[href^="tel:"], a[href^="mailto:"] {
     z-index: 0; 
 }
 
+.aligned-text {
+    display: block;
+}
+
 .aligned-text_center {
   text-align: center; 
-  display: block;
   padding: 17px 75px 0 7px;
 }
 
 .aligned-text_right {
     text-align: right;
-    display: block;
     padding: 18px 70px 0 0;
 }
 
