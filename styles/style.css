@@ -1,10 +1,8 @@
-/* Поехали. Шапка с меню */
 .header {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items:center;
     min-width: 1100px;
-    min-height: 293px;
     background-color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 400;
@@ -20,6 +18,7 @@
     list-style-type: circle;
     gap: 33px;
     padding-left: 50px;
+    padding-bottom: 5px;
 }
 
 .header__link_current {
@@ -48,6 +47,8 @@
     padding-right: 55px;
     max-width: 290px;
     justify-self: end;
+    min-height: 293px;
+    padding-top: 98px;
 }
 
 a[href^="tel:"], a[href^="mailto:"] {
@@ -58,9 +59,9 @@ a[href^="tel:"], a[href^="mailto:"] {
 
 .logo {
     max-width: 145px;
-
 }
-/* Оно тебе надо */
+
+/* Banner Section */
 .banner {
     width: 1100px;
     min-height: 757px;
@@ -71,72 +72,76 @@ a[href^="tel:"], a[href^="mailto:"] {
     background-size: cover;
 }
 
-.overlay {
-    background-color: RGB(0 0 0/0.6);
-    inset: 0;
-    position: absolute;
-}
-
-h1 {
-    position: absolute; 
-    inset: 165px 50px 207px 50px;
-    font-style: bold;
+.banner-title {
     color: white;
     font-size: 100px;
     text-transform: uppercase;
     font-weight: 700;
     z-index: 1;
     letter-spacing: 0.3em;
+    position: relative;
+    inset: 165px 50px 207px 50px;
 }
 
-.word2 {
+.banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 0; 
+}
+
+.aligned-text_center {
   text-align: center; 
   display: block;
-  padding: 18px 0 0 27px;
+  padding: 17px 75px 0 7px;
 }
 
-.word3 {
+.aligned-text_right {
     text-align: right;
     display: block;
-    padding: 18px 0 0 614px;
+    padding: 18px 70px 0 0;
 }
 
 .banner-opisanie {
-    position: absolute;
-    inset: 668px 413px 61px 50px;
-    z-index: 1;
+    z-index: 3;
     color: white;
     font-size: 22px;
     text-transform: uppercase;
     word-spacing: 18px; 
+    position: relative;
+    inset: 284px 0 0 52px;
 }
 
 .banner-button {
-    position: absolute;
-    inset: 656px 50px 50px 794px;
-    z-index: 1;
+    z-index: 2;
     color: white;
     font-size: 22px;
     text-transform: uppercase;
     border: 1px solid white;
     text-align: center;
-    padding: 10px;
     text-decoration: none;
+    position: relative;
+    inset: 244px 0 0 792px;
+    padding: 12px 32px 12px 32px;
+    background: transparent;
 }
 
-/* Блок с лотами */
+/* Block section */
 .lots {
     width: 1052px;
-    min-height: 723px;
     margin-left: 26px;
     display: grid;
     column-gap: 25px;
-    padding-top: 27px;   
+    padding-top: 23px;   
 }
-.h2 {
+
+.lots-title {
     font-size: 40px;
     text-transform: uppercase;
-    font-style: bold;
+    font-weight: 700;
     padding: 157px 0 27px 40px;
     z-index: 2;
 }
@@ -144,11 +149,11 @@ h1 {
 .lots__card-list {
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;          /* разрешить перенос */
+    flex-wrap: wrap;          
     gap: 25px;   
 }
 
-.lots__card-list-item::before { /* Затемнение */
+.lots__card-list-item::before { 
     content: '';
     position: absolute;
     inset: 0;
@@ -158,41 +163,36 @@ h1 {
     z-index: 1; 
 }
 
-.lot1 {
+.lot-left {
     background-image: url('../images/card-lot-01.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.lot2 {
+.lot-center {
     background-image: url('../images/photo-knigi.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.lot3 {
+.lot-right {
     background-image: url('/images/photo-kartini.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
  .lots__card-list-item {
     position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: center; 
     width: 334px;
-    height: 596px;
-    justify-content: center;
+    min-height: 596px;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 } 
 
 .article {
-    position: absolute;
     width: 254px;
     text-transform: uppercase;
     text-decoration: underline;
-    text-underline-offset: 3px; 
+    text-underline-offset: 4px; 
     color: rgb(255, 255, 255);
     justify-self: center;
     padding-top: 48px;
@@ -202,35 +202,35 @@ h1 {
 }
 
 .card__text {
-    position: absolute;
     width: 254px;
-    z-index: 3;
     color: rgb(255, 255, 255);
     font-weight: 400;
     font-size: 20px;
     justify-self: center;
-    bottom: 48px;
+    z-index: 3;
+    padding-bottom: 48px;
 }
 
 .lot-link {
     display: block; 
     width: 100%; 
     height: 100%; 
-    position: absolute; 
     top: 0;
     left: 0;
     z-index: 2; 
-}
-.lots__look-more-link {
-    font-size: 20px;
-    padding: 28px 0 0 40px;
-    display: inline-block;
+    text-decoration: none;
 }
 
-/* Блок с описание аукциона*/
+.lots__look-more-link {
+    font-size: 20px;
+    padding: 30px 0 0 40px;
+    display: inline-block;
+    text-underline-offset: 4px; 
+}
+
+/* About auction */
 .about__column {
     width: 1052px;
-    min-height: 595px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-content: start;
@@ -238,8 +238,8 @@ h1 {
     grid-template-areas: 
       "logo-krug h2"
       ". all-text"; 
-    padding-left: 49px;
-    padding-top: 146px;
+    padding-left: 46px;
+    padding-top: 154px;
 }
 
 .all-text {
@@ -253,7 +253,7 @@ h1 {
 }
 
 .about__title {
-    grid-area: h2; /* Привязка заголовка к области */
+    grid-area: h2; 
     align-self: center;
     font-size: 40px;
     text-transform: uppercase;
@@ -265,22 +265,20 @@ h1 {
     grid-area: auction-opisanie; 
     font-size: 20px;
     color: rgba(0, 0, 0, 1);
-    padding-bottom: 10px;
-    padding-top: 13px;
+    padding-bottom: 18px;
+    padding-top: 8px;
 }
 
 /* Footer */
 .footer {
-    min-height: 180px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     justify-content: center;
-    padding-top: 170px;
-    padding-bottom: 130px;
+    padding-top: 161px;
 }
 
 .address-footer {
-    padding: 7px 0 0 50px;
+    padding: 0px 0 82px 50px;
     font-size: 18px;
     max-width: 300px;
     font-style: normal;
@@ -307,4 +305,4 @@ h1 {
   height: 48px;
   object-fit: contain;
 }
-/* */
+/* :) */
