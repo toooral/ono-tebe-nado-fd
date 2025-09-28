@@ -172,7 +172,7 @@ a[href^="tel:"], a[href^="mailto:"] {
 }
 
 .lot-right {
-    background-image: url('/images/photo-kartini.jpg');
+    background-image: url('../images/photo-kartini.jpg');
 }
 
  .lots__card-list-item {
